@@ -6,6 +6,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import './tailwind.css'
+import { ApolloProvider } from '@apollo/client';
+import { apolloClient } from './app/graphql';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
@@ -13,7 +15,9 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <ApolloProvider client={apolloClient}>
+        <App />
+      </ApolloProvider>
     </Provider>
   </React.StrictMode>
 );

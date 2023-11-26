@@ -1,8 +1,17 @@
 import { Module } from "@nestjs/common";
-import { Connection } from "typeorm";
+import { Connection, getConnectionOptions } from "typeorm";
 import { TypeOrmModule } from "@nestjs/typeorm";
+import ormconfig from "./ormconfig";
 @Module({
-  imports:[TypeOrmModule.forRoot()],
+  imports:[TypeOrmModule.forRootAsync({
+    useFactory: async() => (
+      Object.assign(
+        await getConnectionOptions(
+          process.env.NODE_ENV === 'production' ? 'prod' : 'development'
+          )
+        )
+    )
+  })],
   exports:[TypeOrmModule]
 })
 

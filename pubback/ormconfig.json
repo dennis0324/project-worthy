@@ -1,13 +1,24 @@
-{
-  "type":"mysql",
+[{
+  "name":"dev",
+  "type":"mariadb",
   "host":"localhost",
   "port":3306,
-  "password":"",
+  "username":"root",
+  "password":"1234",
   "database":"electric",
   "entities":["dist/**/entities/*{.ts,.js}"],
   "synchronize":true,
-  "migrations":["src/migrations/*{.ts,.js}"],
-  "cli":{
-    "migrationsDir":"src/migrations"
-  }
-}
+  "migrations":["src/migrations/*{.ts,.js}"]
+},
+{
+  "name": "prod",
+  "type": "mysql",
+  "host": "mysqldb",
+  "port": 3306,
+  "username": "root",
+  "password": "pass123",
+  "database": "electric",
+  "entities": ["dist/**/entities/*{.ts,.js}"],
+  "synchronize": true,
+  "migrations": ["dist/migrations/*{.ts,.js}"]
+}]
