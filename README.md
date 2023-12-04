@@ -76,6 +76,21 @@ graphql playround에서 뮤테이션을 한 모습
 
 앞에서 보여드린 프론트 엔드의 URI를 확인해시면 포트가 3000임을 볼 수 있기 때문에 해당 서비스만 바로 올리면 배포가 가능한 형태를 띄고 있습니다.
 
+# 2023/12/04 기준 추가글
+주소를 공개하지 않고 해당 과제로만 제출하려던 이유가 접속량으로 인해서 가격 증가때문에 다른 외부인들의 접속을 막으려 하였으나,
+해당 ECS의 경우 켜있는 시간으로 책정되어서도 돈이 나가는 것을 확인하였습니다.
+
+![image](https://github.com/dennis0324/project-worthy/assets/50710829/55e04e93-c5bb-465a-8ced-d62adbaa971b)
+해당 사진처럼 지속적으로 돈이 나가서 유지하기 힘들어져서 해당 AWS를 중지하고 해당 링크를 공개한채 되는 것을 증명하려 합니다.
+
+![image](https://github.com/dennis0324/project-worthy/assets/50710829/95f31416-4854-4b8a-931d-e11ad8846f62)
+해당 서비스는 다음과 같이 네트워크가 구성되어있습니다.
+해당 서비스관련 DNS로 들어가보게 되면
+![image](https://github.com/dennis0324/project-worthy/assets/50710829/27e584c1-bec9-4855-8861-8fca98adb45e)
+위 사진처럼 react 데모 파일이 돌아가는 것을 확인 할 수 있습니다.
+
+
+
 # 해당 깃허브 확인법
 
 ### 1. Prerequisites
