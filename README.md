@@ -7,6 +7,8 @@
 </p>
 
 ---
+#### 전반적인 모습
+![image](https://github.com/dennis0324/project-worthy/assets/50710829/d09ef269-e451-4f7e-864f-85d338c84dda)
 
 **중요! 현재 개발중이므로 IOT와 관련된 모든 것들은 불가합니다**
 
